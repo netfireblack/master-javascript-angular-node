@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    height: 100vh;
+    border: 4px solid #ffa500;
+    display: flex;
+    flex-direction: column; /* Se invierten los ejes */
+    justify-content: flex-end; /* Eje primario (ahora es y) */
+    align-items: center; /* Valor por defecto */
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background-color: lightcoral;
+    margin: 20px;
+}
+
+.caja.derecha {
+    align-self: flex-end; /* Alinea a elementos hijos en el eje secundario */
+}
+
+.caja p {
+    font-size: 20px;
+}

@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Medidas relativas rem y em */
+
+/* Rem: Establece un tamaño relativo al valor font-size del documento */
+
+html {
+    font-size: 20px; /* Valor raiz */
+}
+
+.container {
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+button {
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5em 1em; /* Em: Será relativa al tamaño de fuente del elemento */
+    border-radius: 0.3em;
+    margin: 1rem;
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 18px; /* Valor raiz */
+    }
+}
+
+@media (max-width: 440px) {
+    html {
+        font-size: 16px; /* Valor raiz */
+    }
+}

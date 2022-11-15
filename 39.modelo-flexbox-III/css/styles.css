@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    border: 4px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch; /* Valor por defecto */
+}
+
+.caja {
+    width: 250px;
+    padding: 20px;
+    background-color: lightcoral;
+    margin: 20px;
+}
+
+.caja p {
+    font-size: 20px;
+}

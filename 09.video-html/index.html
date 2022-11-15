@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video en HTML</title>
+</head>
+<body>
+    <!-- Elemento video con sus atributos básicos -->
+    <video src="media/playing-electric-guitar.mp4"
+           width="640"
+           controls></video>
+    <!-- Elemento video con atributos adicionales -->
+    <video src="media/playing-electric-guitar.mp4"
+           width="640"
+           controls
+           muted
+           preload="none"
+           poster="img/electric.png"></video>
+    <!-- Elemento video con subtítulos -->
+    <video width="640" controls>
+        <source src="media/playing-electric-guitar.mp4">
+        <track src="media/sub_es.vtt"
+               srclang="es"
+               label="Castellano"
+               default>
+        <track src="media/sub_en.vtt"
+               srclang="en"
+               label="Inglés">
+    </video>
+</body>
+</html>

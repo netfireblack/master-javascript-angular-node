@@ -1,0 +1,20 @@
+.padre {
+    border: solid 2px green;
+    margin: 40px;
+    padding: 40px;
+    color: crimson; /* Como color es heredable se herada en los descendientes hasta que se sobreescriba la regla */
+}
+
+.hijo {
+    border: solid 2px violet;
+    margin: 40px;
+    padding: 40px;
+    color: green; /* Rompemos la herencia y prevalece esta regla sobre la que provenga del ascendiente */
+}
+
+.nieto {
+    border: inherit; /* Convertir en este caso la propiedad en heredable */
+    margin: 40px;
+    padding: 40px;
+    color: initial; /* Eliminar la herencia y establecer su valor por defecto */
+}

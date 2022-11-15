@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    box-shadow: 2px 2px 5px grey;
+    padding: 20px;
+    border-spacing: 5px;
+}
+
+th {
+    background-color: #167f92;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+}
+
+th:nth-child(1),
+th:nth-child(2),
+th:nth-child(4) {
+    text-align: left;
+}
+
+td {
+    color: #167f92;
+    font-size: 22px;
+    padding: 10px;
+}
+
+tr:nth-child(even) td {
+    border: solid 1px rgba(22, 128, 146, 0.7);
+}
+
+tr:nth-child(odd) td {
+    background-color: rgba(22, 128, 146, 0.5);
+    color: white;
+}
+
+td:nth-child(3) {
+    text-align: center;
+}
+
+/* Tabla sin cabecera */
+.sin-cabecera {
+    border-collapse: collapse;
+}
+
+.sin-cabecera tr:nth-child(odd) td,
+.sin-cabecera tr:nth-child(even) td {
+    background-color: white;
+    color: #808080;
+    border: none;
+    border-bottom: 0.5px solid #808080;
+}
+
+.sin-cabecera td:nth-child(3) {
+    text-align: left;
+}
+
+.sin-cabecera td span {
+    display: flex;
+    align-items: center;
+}
+
+.sin-cabecera td span img {
+    margin-right: 8px;
+}
+
+.sin-cabecera tr:hover td {
+    background-color: rgba(128, 128, 128, 0.1);
+}
