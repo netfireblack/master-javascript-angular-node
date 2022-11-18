@@ -293,7 +293,9 @@ header.transparente nav a:hover {
     margin-top: 100vh;
 }
 
-#pr {
+#pr,
+#legal,
+#cookies {
     display: block;
     margin-top: -90px;
     padding-bottom: 90px;
@@ -302,6 +304,10 @@ header.transparente nav a:hover {
 .fila {
     display: flex;
     padding: 2rem 1rem;
+}
+
+.fila.contacto {
+    margin-top: 80px;
 }
 
 .col-100 {
@@ -578,4 +584,84 @@ footer .copyright {
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.8rem;
     text-align: center;
+}
+
+/* Card */
+
+.fila.grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-gap: 1.5rem;
+    justify-content: center;
+}
+
+.card {
+    width: 360px;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card img {
+    height: 320px;
+}
+
+.card .footer-card {
+    padding: 0.8rem;
+    width: 100%;
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card .footer-card p {
+    margin-bottom: 0.5rem;
+}
+
+.card .footer-card p:first-child {
+    font-weight: bold;
+}
+
+.card .footer-card a {
+    background-color: #a97c50;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    align-self: center;
+    transition: 400ms ease-in-out all;
+}
+
+.card .footer-card a:hover {
+    background-color: #664626;
+}
+
+/* Ficha propiedad */
+
+.propiedad {
+    margin-top: 80px;
+    background-image: url('../img/property5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.propiedad div:first-child {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.propiedad div:first-child h1 {
+    font-size: 1.4rem;
+    color: #a97c50;
+}
+
+.propiedad div:first-child p img {
+    width: 28px;
+    height: 28px;
 }
